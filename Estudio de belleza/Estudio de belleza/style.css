@@ -1,0 +1,424 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#fff7fa;
+    color:#444;
+    overflow-x:hidden;
+}
+
+/*===========================
+        HEADER
+===========================*/
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(12px);
+    transition:.4s;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+
+.logo{
+    color:white;
+    font-size:34px;
+    font-family:'Playfair Display',serif;
+    font-weight:bold;
+}
+
+.logo span{
+    display:block;
+    color:#f7b7cf;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.menu{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+.menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#f7b7cf;
+
+    transition:.3s;
+
+}
+
+.menu a:hover::after{
+
+    width:100%;
+
+}
+
+.menu a:hover{
+
+    color:#f7b7cf;
+
+}
+
+.btn-menu{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/*===========================
+          HERO
+===========================*/
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 10%;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-text{
+
+    max-width:650px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(10px);
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+}
+
+.etiqueta{
+
+    color:#d97ca6;
+
+    font-weight:bold;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.hero h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:60px;
+
+    margin:20px 0;
+
+    color:#111;
+
+}
+
+.hero p{
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.hero-botones{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    padding:15px 35px;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+    background:#111;
+
+    color:white;
+
+    transition:.4s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.btn:hover{
+
+    background:#d97ca6;
+
+    transform:translateY(-5px);
+
+}
+
+.btn-secundario{
+
+    padding:15px 35px;
+
+    border-radius:35px;
+
+    border:2px solid #111;
+
+    color:#111;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+.btn-secundario:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/*===========================
+      ESTADISTICAS
+===========================*/
+
+.estadisticas{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    padding:80px 10%;
+
+    background:white;
+
+}
+
+.dato{
+
+    text-align:center;
+
+}
+
+.dato h2{
+
+    font-size:45px;
+
+    color:#d97ca6;
+
+    margin-bottom:10px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.dato p{
+
+    color:#666;
+
+}
+
+/*===========================
+        ABOUT
+===========================*/
+
+.about{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:100px 10%;
+
+    background:#fff3f8;
+
+}
+
+.imagen-about{
+
+    flex:1;
+
+}
+
+.imagen-about img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+.imagen-about img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.texto-about{
+
+    flex:1;
+
+}
+
+.texto-about h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:48px;
+
+    margin:20px 0;
+
+}
+
+.texto-about p{
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+    color:#555;
+
+}
+
+.titulo{
+
+    font-family:'Playfair Display',serif;
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.descripcion-seccion{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:60px;
+
+}
+/* Menú responsive */
+
+.menu-activo{
+    display:flex !important;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    right:20px;
+    width:220px;
+    background:#111;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+/* Navbar al hacer scroll */
+
+.header-scroll{
+    background:#111;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+/* Animaciones */
+
+.card,
+.imagen-about,
+.texto-about,
+.dato,
+.testimonio,
+.imagenes img{
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+
+}
+
+.mostrar{
+
+    opacity:1 !important;
+    transform:translateY(0) !important;
+
+}
