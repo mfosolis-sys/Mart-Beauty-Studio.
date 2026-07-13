@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Montserrat', sans-serif;
+    color:#333;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* NAVBAR */
+
+header{
+
+    background:#000;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+
+}
+
+
+.logo{
+
+    color:white;
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+
+}
+
+
+.logo span{
+
+    color:#e7a7c7;
+    font-size:15px;
+
+}
+
+
+.menu{
+
+    display:flex;
+    gap:30px;
+    list-style:none;
+
+}
+
+
+.menu a{
+
+    color:white;
+    text-decoration:none;
+
+}
+
+
+.btn-menu{
+
+    display:none;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+
+url("https://images.unsplash.com/photo-1560066984-138dadb4c035");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding-left:10%;
+
+}
+
+
+
+.hero-text{
+
+color:white;
+max-width:600px;
+
+}
+
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+font-size:55px;
+
+}
+
+
+.hero p{
+
+margin:25px 0;
+font-size:18px;
+
+}
+
+
+.btn{
+
+background:#e7a7c7;
+padding:15px 35px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+
+}
+
+
+
+/* ABOUT */
+
+
+.about{
+
+display:flex;
+padding:100px 10%;
+gap:50px;
+align-items:center;
+
+}
+
+
+.imagen-about img{
+
+width:400px;
+border-radius:20px;
+
+}
+
+
+.texto-about h2,
+.titulo{
+
+font-family:'Playfair Display',serif;
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+
+
+/* SERVICIOS */
+
+
+#servicios{
+
+padding:80px 10%;
+background:#faf4f7;
+
+}
+
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:white;
+padding:35px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+.card h3{
+
+color:#bd5098;
+margin-bottom:15px;
+
+}
+
+
+
+/* GALERIA */
+
+
+.galeria{
+
+padding:80px 10%;
+
+}
+
+
+.imagenes{
+
+display:flex;
+gap:20px;
+
+}
+
+
+.imagenes img{
+
+width:33%;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+
+}
+
+
+
+
+/* CONTACTO */
+
+
+.contacto{
+
+background:#000;
+color:white;
+text-align:center;
+padding:80px;
+
+}
+
+
+.contacto button{
+
+background:#bd5098;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:30px;
+cursor:pointer;
+
+}
+
+
+footer{
+
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+
+.menu{
+
+display:none;
+
+}
+
+
+.btn-menu{
+
+display:block;
+background:none;
+color:white;
+border:none;
+font-size:25px;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+.about{
+
+flex-direction:column;
+
+}
+
+
+.imagen-about img{
+
+width:100%;
+
+}
+
+
+.imagenes{
+
+flex-direction:column;
+
+}
+
+
+.imagenes img{
+
+width:100%;
+
+}
+
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mart Beauty Studio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Tipografías -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Iconos redes sociales -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+MART <span>Beauty Studio</span>
+</div>
+
+
+<ul class="menu">
+
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
+
+<button class="btn-menu" onclick="mostrarMenu()">
+☰
+</button>
+
+
+</nav>
+
+</header>
+
+
+
+
+<!-- HERO -->
+
+<section id="inicio" class="hero">
+
+
+<div class="hero-text">
+
+<h1>
+Conviertete en tu mejor vesrión 
+</h1>
+
+
+<p>
+En Mart Beauty Studio creamos experiencias personalizadas
+de belleza con técnicas profesionales y atención exclusiva.
+</p>
+
+
+<a href="#contacto" class="btn">
+Reservar cita
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- NOSOTROS -->
+
+<section id="nosotros" class="about">
+
+
+<div class="imagen-about">
+
+<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035">
+
+</div>
+
+
+
+<div class="texto-about">
+
+
+<h2>
+Sobre Nosotros
+</h2>
+
+
+<p>
+Mart Beauty Studio es un estudio especializado en uñas,
+pestañas, cejas y maquillaje profesional.
+</p>
+
+
+<p>
+Creamos servicios personalizados con técnicas actualizadas,
+productos de calidad y atención enfocada en cada detalle.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- SERVICIOS -->
+
+<section id="servicios">
+
+
+<h2 class="titulo">
+Nuestros Servicios
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-hand-sparkles"></i>
+
+<h3>
+Uñas
+</h3>
+
+<p>
+Manicure permanente, acrílicas,
+polygel y diseños personalizados.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-eye"></i>
+
+<h3>
+Pestañas
+</h3>
+
+<p>
+Extensiones clásicas, efecto máscara
+y lifting de pestañas.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-face-smile"></i>
+
+<h3>
+Cejas
+</h3>
+
+<p>
+Diseño, depilación y laminado
+para resaltar tu mirada.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-brush"></i>
+
+<h3>
+Maquillaje
+</h3>
+
+<p>
+Maquillaje social y eventos especiales
+con acabado profesional.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- GALERÍA -->
+
+<section id="galeria" class="galeria">
+
+
+<h2 class="titulo">
+Nuestros Trabajos
+</h2>
+
+
+
+<div class="imagenes">
+
+
+<img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc">
+
+
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
+
+
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTACTO -->
+
+
+<section id="contacto" class="contacto">
+
+
+<h2>
+Agenda tu cita
+</h2>
+
+
+<p>
+📍 Valle de los Chillos - El Colibrí
+</p>
+
+
+<p>
+📞 0995166740
+</p>
+
+
+<p>
+
+Horario:
+
+<br>
+
+Lunes a viernes:
+14:00 - 18:00
+
+<br>
+
+Sábados y domingos:
+08:00 - 18:00
+
+</p>
+
+
+
+<button onclick="reservar()">
+
+Reservar por WhatsApp
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<div class="redes-sociales">
+
+
+<a href="https://www.facebook.com/mafer.solis.37819" target="_blank">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+
+
+<a href="https://www.instagram.com/explore/" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+
+<a href="https://www.tiktok.com/@stretlegend" target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+
+</div>
+
+
+
+<p>
+© 2026 Mart Beauty Studio | Todos los derechos reservados
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
