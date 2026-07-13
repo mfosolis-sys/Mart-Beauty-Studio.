@@ -9,15 +9,21 @@ body{
 
     font-family:'Montserrat', sans-serif;
     color:#333;
+    background:#fff0f5;
+
 }
 
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 
-/* NAVBAR */
+
+/* ================= NAVBAR ================= */
+
 
 header{
 
@@ -30,6 +36,7 @@ header{
 }
 
 
+
 .navbar{
 
     display:flex;
@@ -40,38 +47,55 @@ header{
 }
 
 
+
 .logo{
 
     color:white;
     font-family:'Playfair Display',serif;
-    font-size:28px;
+    font-size:30px;
+    letter-spacing:1px;
 
 }
+
 
 
 .logo span{
 
-    color:#e7a7c7;
+    color:#f4b6cf;
     font-size:15px;
+    font-family:'Montserrat';
 
 }
+
 
 
 .menu{
 
     display:flex;
-    gap:30px;
+    gap:35px;
     list-style:none;
 
 }
+
 
 
 .menu a{
 
     color:white;
     text-decoration:none;
+    font-weight:500;
+    transition:.3s;
 
 }
+
+
+
+.menu a:hover{
+
+    color:#f4b6cf;
+
+}
+
 
 
 .btn-menu{
@@ -82,28 +106,32 @@ header{
 
 
 
-/* HERO */
+
+/* ================= HERO ================= */
 
 
 .hero{
 
+
 height:100vh;
+
 
 background:
 
-linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.45)
-),
+url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
 
-url("https://images.unsplash.com/photo-1560066984-138dadb4c035");
 
 background-size:cover;
+
 background-position:center;
 
+
 display:flex;
+
 align-items:center;
+
 padding-left:10%;
+
 
 }
 
@@ -111,79 +139,170 @@ padding-left:10%;
 
 .hero-text{
 
-color:white;
-max-width:600px;
+
+background:rgba(255,255,255,0.75);
+
+padding:45px;
+
+border-radius:25px;
+
+max-width:650px;
+
 
 }
+
 
 
 .hero h1{
 
+
 font-family:'Playfair Display',serif;
+
 font-size:55px;
 
+color:#000;
+
+line-height:1.2;
+
+
 }
+
 
 
 .hero p{
 
+
 margin:25px 0;
+
 font-size:18px;
 
+color:#333;
+
+
 }
+
 
 
 .btn{
 
-background:#e7a7c7;
-padding:15px 35px;
+
+background:#000;
+
+padding:15px 40px;
+
 border-radius:30px;
+
 color:white;
+
 text-decoration:none;
+
+display:inline-block;
+
+transition:.3s;
+
 
 }
 
 
 
-/* ABOUT */
+.btn:hover{
+
+
+background:#d98cab;
+
+
+}
+
+
+
+
+
+
+
+/* ================= ABOUT ================= */
 
 
 .about{
 
+
 display:flex;
+
 padding:100px 10%;
-gap:50px;
+
+gap:60px;
+
 align-items:center;
 
+
+background:#fff0f5;
+
+
 }
+
 
 
 .imagen-about img{
 
-width:400px;
-border-radius:20px;
+
+width:450px;
+
+height:500px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
 
 }
+
 
 
 .texto-about h2,
 .titulo{
 
+
 font-family:'Playfair Display',serif;
-font-size:40px;
-margin-bottom:20px;
+
+font-size:42px;
+
+color:#000;
+
+margin-bottom:25px;
+
 
 }
 
 
 
-/* SERVICIOS */
+.texto-about p{
+
+
+line-height:1.8;
+
+font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+/* ================= SERVICIOS ================= */
 
 
 #servicios{
 
-padding:80px 10%;
-background:#faf4f7;
+
+padding:90px 10%;
+
+background:#ffffff;
+
 
 }
 
@@ -191,104 +310,265 @@ background:#faf4f7;
 
 .cards{
 
+
 display:grid;
+
 grid-template-columns:repeat(4,1fr);
+
 gap:25px;
 
+
 }
+
 
 
 
 .card{
 
-background:white;
-padding:35px;
+
+background:#fff0f5;
+
+padding:40px 25px;
+
 text-align:center;
-border-radius:20px;
-box-shadow:0 5px 20px #ddd;
+
+border-radius:25px;
+
+border:1px solid #f3c5d6;
+
+
+transition:.3s;
+
 
 }
+
+
+
+.card:hover{
+
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+
+}
+
 
 
 .card h3{
 
-color:#bd5098;
+
+font-family:'Playfair Display',serif;
+
+font-size:25px;
+
+color:#000;
+
 margin-bottom:15px;
+
 
 }
 
 
 
-/* GALERIA */
+.card p{
+
+
+line-height:1.6;
+
+}
+
+
+
+
+
+
+
+/* ================= GALERIA ================= */
 
 
 .galeria{
 
-padding:80px 10%;
+
+padding:90px 10%;
+
+background:#fff0f5;
+
 
 }
+
 
 
 .imagenes{
 
-display:flex;
-gap:20px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
 
 }
+
 
 
 .imagenes img{
 
-width:33%;
-height:300px;
+
+width:100%;
+
+height:350px;
+
 object-fit:cover;
-border-radius:20px;
+
+border-radius:25px;
+
+
+transition:.4s;
+
+
+}
+
+
+
+.imagenes img:hover{
+
+
+transform:scale(1.05);
+
 
 }
 
 
 
 
-/* CONTACTO */
+
+
+
+/* ================= CONTACTO ================= */
 
 
 .contacto{
 
+
 background:#000;
+
 color:white;
+
 text-align:center;
-padding:80px;
+
+padding:90px;
+
 
 }
+
+
+
+.contacto h2{
+
+
+font-family:'Playfair Display',serif;
+
+font-size:45px;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.contacto p{
+
+
+margin:10px;
+
+font-size:17px;
+
+
+}
+
 
 
 .contacto button{
 
-background:#bd5098;
-color:white;
+
+margin-top:25px;
+
+background:#f4b6cf;
+
+color:#000;
+
 border:none;
-padding:15px 30px;
+
+padding:15px 40px;
+
 border-radius:30px;
+
+font-weight:bold;
+
 cursor:pointer;
 
+
+transition:.3s;
+
+
 }
+
+
+
+.contacto button:hover{
+
+
+background:white;
+
+
+}
+
+
+
+
+
+
+/* ================= FOOTER ================= */
 
 
 footer{
 
-background:#111;
+
+background:#000;
+
 color:white;
+
 text-align:center;
-padding:20px;
+
+padding:30px;
+
+
+}
+
+
+
+footer p{
+
+
+font-size:14px;
+
 
 }
 
 
 
 
-/* RESPONSIVE */
+
+/* ================= RESPONSIVE ================= */
+
+
 
 @media(max-width:900px){
+
 
 
 .menu{
@@ -298,49 +578,94 @@ display:none;
 }
 
 
+
 .btn-menu{
 
+
 display:block;
+
 background:none;
-color:white;
+
 border:none;
+
+color:white;
+
 font-size:25px;
 
+
 }
+
 
 
 .cards{
 
+
 grid-template-columns:1fr;
 
+
 }
+
 
 
 .about{
 
+
 flex-direction:column;
 
+
 }
+
 
 
 .imagen-about img{
 
+
 width:100%;
 
+height:auto;
+
+
 }
+
 
 
 .imagenes{
 
-flex-direction:column;
+
+grid-template-columns:1fr;
+
 
 }
 
 
-.imagenes img{
 
-width:100%;
+.hero{
+
+
+padding:20px;
+
 
 }
+
+
+
+.hero-text{
+
+
+padding:30px;
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:35px;
+
+
+}
+
 
 }
